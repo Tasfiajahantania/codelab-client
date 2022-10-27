@@ -46,16 +46,16 @@ const Register = () => {
 
 
     return (
-        <div className='bg-neutral-800 text-white p-3 text-center'>
+        <div className='bg-neutral-800 text-black p-3 text-center'>
             <h2>Register</h2>
             <form onSubmit={handelRegister}>
                 <input type="text" name='fname' placeholder="Full Name" required className="input text-white input-bordered w-3/4 my-3" />
                 <input type="email" name='email' placeholder="Email" required className="input input-bordered w-3/4 text-white " />
                 <input type="password" name="password" placeholder="password" required className="input input-bordered w-3/4 my-3 text-white" />
-                <button className='text-white text-sm px-4 py-2 rounded bg-yellow-700 w-3/4 my-2'>Register</button>
+                <button className='text-white text-sm px-4 py-2 rounded bg-pink-500 w-3/4 my-2'>Register</button>
             </form>
             <div>
-                <button onClick={handelGoogleSignin} className='text-white text-sm px-4 py-2 rounded bg-yellow-700 w-3/4 my-6'><span className=' d-flex justify-center items-center'>
+                <button onClick={handelGoogleSignin} className='text-white text-sm px-4 py-2 rounded bg-pink-500 w-3/4 my-6'><span className=' d-flex justify-center items-center'>
                     <span className='px-2'><FaGoogle /></span>
                     <span>Register with Google</span>
                 </span></button>

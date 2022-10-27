@@ -12,7 +12,7 @@ const Courses = () => {
             .then(data => setCourseDetails(data))
     }, [])
     return (
-        <div className='bg-teal-800	'>
+        <div className='bg-white	'>
 
 
             {/* 

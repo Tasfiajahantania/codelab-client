@@ -8,7 +8,7 @@ const main = () => {
     return (
         <div>
             <Header></Header>
-            <div className='bg-teal-800 py-4'>
+            <div className='bg-white py-4'>
                 <Container>
                     <Outlet></Outlet>
                 </Container>

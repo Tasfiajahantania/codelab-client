@@ -34,12 +34,12 @@ const Login = () => {
     }
 
     return (
-        <div className='bg-neutral-800 text-white text-center p-3'>
+        <div className='bg-neutral-800 text-black text-center p-3'>
             <h2 className='my-4'>Log In</h2>
             <form onSubmit={handelLogin}>
                 <input type="email" name='email' placeholder="Email" required className="input input-bordered w-3/4 text-white " />
                 <input type="password" name="password" placeholder="password" required className="input input-bordered w-3/4 my-3 text-white" />
-                <button className='btn btn-info w-3/4 my-2'>Log In</button>
+                <button className='text-white text-sm px-4 py-2 rounded bg-pink-500 w-3/4 my-2'>Log In</button>
             </form>
             <div className='text-danger'>
                 <span>{error}</span>

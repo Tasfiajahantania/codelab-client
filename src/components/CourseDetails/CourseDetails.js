@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { FaUsers, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Col, Container, Row } from 'react-bootstrap';
-import Hellomd from '../Hellomd/Hellomd';
 import Pdf from "react-to-pdf";
 
 const ref = React.createRef();
