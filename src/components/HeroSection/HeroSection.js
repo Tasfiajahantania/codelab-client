@@ -5,7 +5,7 @@ import homeimg from '../../images/home.svg';
 const HeroSection = () => {
     return (
         <div>
-            <div className="hero py-8 ">
+            <div className="hero py-8 text-black bg-blue-300 p-12">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={homeimg} className="max-w-sm rounded-lg shadow-2xl" alt=''/>
                     <div>

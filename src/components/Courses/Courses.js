@@ -38,7 +38,7 @@ const Courses = () => {
                                         <p className='text-sm'>Price: <span>{course.price}</span>$</p>
 
                                         <div className="card-actions justify-center">
-                                            <Link to={`/course-detail/${course._id}`}><button className="text-white text-sm px-4 py-2 rounded bg-yellow-700">Course Details</button></Link>
+                                            <Link to={`/course-detail/${course._id}`}><button className="text-white text-sm px-4 py-2 rounded bg-pink-700">Course Details</button></Link>
                                         </div>
                                     </div>
                                 </div>

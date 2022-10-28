@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthContext/AuthProvider';
-import logo from "../../images/MD_EDU.png";
+import logo from "../../images/logo.png";
 import { AiFillAlert, AiTwotoneBulb } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 
