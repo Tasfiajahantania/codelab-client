@@ -1,4 +1,4 @@
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import { FaGithub, FaGoogle } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { AuthContext } from '../../Context/AuthContext/AuthProvider';
 
 
 const Provider = new GoogleAuthProvider();
+const GithubProvider = new GithubAuthProvider();
 
 const Register = () => {
     const [error, setError] = useState('')
@@ -44,7 +45,7 @@ const Register = () => {
             })
     }
     const handleGithubSignin = () => {
-        GithubAuth(Provider)
+        GithubAuth(GithubProvider)
             .then(result => {
                 const user = result.user;
                 console.log(user);
@@ -58,7 +59,7 @@ const Register = () => {
 
     return (
         <div className='bg-neutral-800 text-black p-3 text-center'>
-            <h2>Register</h2>
+            <h2 className='text-pink-600'>Register</h2>
             <form onSubmit={handelRegister}>
                 <input type="text" name='fname' placeholder="Full Name" required className="input text-white input-bordered w-3/4 my-3" />
                 <input type="email" name='email' placeholder="Email" required className="input input-bordered w-3/4 text-white " />
