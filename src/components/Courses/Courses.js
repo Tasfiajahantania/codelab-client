@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LeftSiteNav from '../LeftSiteNav/LeftSiteNav'
 
 const Courses = () => {
     const [courseDetails, setCourseDetails] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/courses-details')
+        fetch('https://assignment-10-server-side-kappa.vercel.app/courses-details')
             .then(res => res.json())
             .then(data => setCourseDetails(data))
     }, [])

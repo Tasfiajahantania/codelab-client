@@ -17,6 +17,10 @@ const AuthProvider = ({children}) => {
         setLoading(true);
         return signInWithPopup(auth, Provider);
     }
+    const GithubAuth = Provider => {
+        setLoading(true);
+        return signInWithPopup(auth, Provider);
+    }
     const emailAndPasswordAuth = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword( auth, email, password);
@@ -40,7 +44,7 @@ const AuthProvider = ({children}) => {
         }
     }, [])
 
-    const Authinfo = { loading, user, GoogleAuth, emailAndPasswordAuth, logOur, singIn}
+    const Authinfo = { loading, user, GoogleAuth, GithubAuth,  emailAndPasswordAuth, logOur, singIn}
 
     return (
         <div>
