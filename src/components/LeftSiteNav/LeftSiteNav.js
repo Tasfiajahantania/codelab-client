@@ -13,8 +13,8 @@ const LeftSiteNav = () => {
     }, [])
 
     return (
-        <Card className='border-l-4 border-sky-800 p-12 shadow-lg'>
-             <div className='text-gray-900 text-3xl'>
+        <Card className='border-l-4 p-12 shadow-lg'>
+             <div className='text-gray-900 text-3xl '>
             <h3>Total Courses {courses.length}</h3>
             <div>
                 {

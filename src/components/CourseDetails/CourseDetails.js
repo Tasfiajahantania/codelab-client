@@ -17,7 +17,7 @@ const CourseDetails = () => {
         <Container className='bg-base-200 p-4 text-white'>
             <Row>
                 <Col>
-                    <h3 style={{ color: "black"}} ref={ref} className='my-3'>{title}</h3>
+                    <h3 style={{ color: "white"}} ref={ref} className='my-3'>{title}</h3>
                     <div className='d-flex justify-between'>
                         <div className='d-flex my-2 items-center'>
                             <div className='d-flex my-2 items-center'>
