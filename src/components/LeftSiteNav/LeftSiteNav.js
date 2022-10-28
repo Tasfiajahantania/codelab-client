@@ -13,18 +13,16 @@ const LeftSiteNav = () => {
     }, [])
 
     return (
-        <Card className='border-l-4 p-12 shadow-lg'>
-             <div className='text-gray-900 text-3xl '>
-            <h3>Total Courses {courses.length}</h3>
+        <div className='text-gray-900 text-3xl bg-sky-200 p-12 rounded mt-12'>
+            <h3 className='text-pink-500'>Choose your Course</h3>
             <div>
                 {
                     courses.map(course => <p key={course.id}>
-                        <Link className='text-gray-900 font-medium text-xl no-underline hover:underline decoration-orange-500 decoration-wavy decoration-4' to={`/course-detail/${course.id}`}>{course.name}</Link>
+                        <Link className='text-gray-900 font-medium text-xl no-underline hover:underline decoration-orange-500 decoration-wavy decoration-4 border-sky-600' to={`/course-detail/${course.id}`}>{course.name}</Link>
                     </p>)
                 }
             </div>
         </div>
-       </Card>
     );
 };
 

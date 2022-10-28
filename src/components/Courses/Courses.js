@@ -14,21 +14,14 @@ const Courses = () => {
     return (
         <div className='bg-white	'>
 
-
-            {/* 
-                 <Container>
-                    
-                </Container>
-            */}
-
-            <h3 className='text-center'>Courses</h3>
-
-            <Container>
+           
+            <div>
                 <Row>
                     <Col lg="3">
                         <LeftSiteNav></LeftSiteNav>
                     </Col>
                     <Col lg="9">
+                        <h1 className='text-pink-700 text-center'>All Courses</h1>
                         <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-3'>
                             {
                                 courseDetails.map(course => <div key={course._id} className="card shadow-xl my-3">
@@ -47,7 +40,7 @@ const Courses = () => {
                         </div>
                     </Col>
                 </Row>
-            </Container>
+            </div>
         </div>
     );
 };
