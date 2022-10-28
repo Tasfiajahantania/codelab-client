@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const LeftSiteNav = () => {

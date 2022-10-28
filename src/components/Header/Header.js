@@ -26,9 +26,9 @@ const Header = () => {
         <div className='bg-gray-700 text-white'>
             <Navbar className='bg-gray-700' collapseOnSelect expand="lg" bg="dark" variant="white">
                 <Container className='lg:d-flex lg:justify-content-between items-center'>
-                    <Navbar.Brand><Link to="/"> <img src={logo} alt="md edu" /></Link></Navbar.Brand>
+                    <Navbar.Brand><Link to="/"> <img src={logo} alt="/" /></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" className='bg-white'/>
-                    <Navbar.Collapse id="responsive-navbar-nav" className='d-flex justify-end'>
+                    <Navbar.Collapse id="responsive-navbar-nav" className='lg:d-flex lg:justify-end'>
                         <Nav className='d-flex items-center justify-end'>
                             <Link className='text-white no-underline hover:underline decoration-orange-500 decoration-wavy decoration-4 px-2' to="/">Home</Link>
                             <Link className='text-white no-underline hover:underline decoration-orange-500 decoration-wavy decoration-4 px-2' to="/course">Courses</Link>
